@@ -14,6 +14,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
 gem 'devise'
 gem "paperclip", "~> 5.0.0"
+gem 'masonry-rails', '~> 0.2.4'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
