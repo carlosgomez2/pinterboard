@@ -7,7 +7,6 @@ class PinsController < ApplicationController
   end
 
   def show
-    #code
   end
 
   def new
@@ -25,7 +24,6 @@ class PinsController < ApplicationController
   end
 
   def edit
-    #code
   end
 
   def update
@@ -47,7 +45,6 @@ class PinsController < ApplicationController
   end
 
   def downvote
-
   end
 
   private
@@ -57,6 +54,6 @@ class PinsController < ApplicationController
     end
 
     def find_pin
-      @pin = Pin.find(params[:id])
+      @pin = Pin.find_by_id(params[:id])
     end
 end
