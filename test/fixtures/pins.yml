@@ -1,9 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
+  id: 1
+  user_id: 1
+  title: MyString_one
+  description: MyText_one
+  image_file_name: Photo_one
+  image_content_type: image
+  image_file_size: 128
 
 two:
-  title: MyString
-  description: MyText
+  id: 2
+  user_id: 1
+  title: MyString_two
+  description: MyText_two
+  image_file_name: Photo_two
+  image_content_type: image
+  image_file_size: 131
