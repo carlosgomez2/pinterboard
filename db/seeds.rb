@@ -5,3 +5,21 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+User.destroy_all
+Pin.destroy_all
+
+user = User.create(email: "carlos@gmail.com", password: "password", password_confirmation: "password")
+
+puts "#{User.count} user created."
+
+12.times do
+	Pin.create(
+		title: Faker::Simpsons.quote,
+		description: Faker::HeyArnold.quote,
+		created_at: Time.now,
+		user_id: user.id
+	)
+end
+
+puts "#{Pin.count} Pins created."
